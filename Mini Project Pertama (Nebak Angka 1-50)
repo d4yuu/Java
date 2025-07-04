@@ -1,0 +1,32 @@
+import javax.swing.JOptionPane;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+
+    String name = JOptionPane.showInputDialog("Input Your Name");
+    
+    Random random = new Random();
+    int randomNumber = random.nextInt(50)+1; //Store Random Number
+
+    boolean isWin = false;
+        for (int index = 1; index <= 5; index++) {
+            int userAnswer = Integer.parseInt(JOptionPane.showInputDialog("Guest The Number From 1 - 50")); //User guess The Number
+            if (randomNumber == userAnswer) {
+                isWin = true; //the program know that the user won
+                break; //keluar dari loop
+            }else if (randomNumber > userAnswer){
+                JOptionPane.showMessageDialog(null,"It's too Small");
+            }else if (randomNumber < userAnswer){
+                JOptionPane.showMessageDialog(null,"It's too Big");
+            }
+        }
+        
+        if (isWin == true) {
+            JOptionPane.showMessageDialog(null,"Congrats "+name+" You Won");
+        }else {
+            JOptionPane.showMessageDialog(null,"You Lost");
+        }
+        
+    }
+}
