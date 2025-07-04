@@ -1,1 +1,1 @@
-# Java
+This repository was created to recap my Java learning progress. I created it on July 4th, 2025. Hopefully, my future self can see this and feel proud of himself because he made it to that point.Hopefully we can be a well-off person(Tell yourself that we made it tho).
