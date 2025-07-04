@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane; 
+// library untuk popup Boc Message
+public class Main {
+    public static void main(String[] args) {
+        String name = JOptionPane.showInputDialog("Enter Your Name"); //Input untuk munculin box input
+        JOptionPane.showMessageDialog(null,"Hello"+name); //untuk menampilkan apa yang udah diisi bisa
+
+        int age = Integer.parseInt(JOptionPane.showOptionDialog("Enter Your Age")); //convert ke integer karena JOptionPane itu returnnya String
+        JOptionPane.showMessageDialog(null,"So You are "+age+" Years Old");
+      
+        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter Your Height"));//convert ke double karena JOptionPane itu returnnya String
+        JOptionPane.showMessageDialog(null,"So You are "+height+" Cm");
+    }
+}
